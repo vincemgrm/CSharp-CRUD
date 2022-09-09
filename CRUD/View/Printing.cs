@@ -26,7 +26,10 @@ namespace CRUD.View
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Models.Students.UI(this.Parent as Panel);
+            Panel p = this.Parent as Panel;
+            p.Controls.Clear();
+
+            Models.Students.UI(p);
         }
     }
 }
